@@ -1,0 +1,27 @@
+@mixin link-reset {
+  text-decoration: none;
+  color: #000;
+}
+
+@mixin gold-btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #F9E4B0 0%, #C09D50 100%);
+  box-shadow: 0px -7px 22px rgba(0, 0, 0, 0.15);
+  border-radius: 74px;
+  padding: 22px 48px;
+  font-family: 'MADE Evolve Sans';
+  transition: 0.5s;
+  text-align: center;
+
+  &:hover {
+    background: linear-gradient(90deg, #F9E4B0 0%, #C09D50 100%);
+  }
+
+  @media (max-width: 1250px) {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 17px 13px;
+    display: block;
+  }
+}

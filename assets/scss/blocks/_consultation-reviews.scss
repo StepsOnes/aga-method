@@ -1,0 +1,49 @@
+.consultation-reviews {
+  background: #958578;
+  padding: 65px 0 76px 0;
+  position: relative;
+}
+
+.consultation-reviews__btn {
+  @include link-reset;
+  @include gold-btn;
+  position: absolute;
+  bottom: -29px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.consultation-reviews__title {
+  color: #FFFF;
+  max-width: 750px;
+  font-size: 35px;
+  line-height: 53px
+}
+
+.consultation-reviews__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.consultation-reviews__subtitle {
+  color: #F9E4B0;
+  margin: 37px 0 80px 0;
+}
+
+.reviews-box {
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.reviews-box__wrapper {
+  position: relative;
+}
+
+.nav-left__rev {
+  left: -70px;
+}
+
+.nav-right__rev  {
+  right: 0;
+}

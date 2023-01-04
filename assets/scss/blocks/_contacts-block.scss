@@ -1,0 +1,39 @@
+.contacts-block {
+  padding: 150px 0 64px 0;
+  position: relative;
+}
+
+.contacts-block__container {
+  max-width: 1650px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.contacts-block__text {
+  margin-left: 20%;
+}
+
+.contacts-block__title {
+  font-size: 27px;
+  line-height: 41px;
+}
+
+.contacts-block__subtitle {
+  font-size: 25px;
+  line-height: 118.4%;
+  margin-bottom: 42px;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:34.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:545px;
+  width:100%;
+  position:absolute;
+}

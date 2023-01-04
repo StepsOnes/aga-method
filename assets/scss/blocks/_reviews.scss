@@ -1,0 +1,39 @@
+.reviews {
+  @media (max-width: 1250px) {
+    padding-bottom: 40px;
+  }
+}
+
+.review__title {
+  margin-bottom: 16px;
+}
+
+.reviews__subtitle {
+  color: $color_1;
+
+  @media (max-width: 1250px) {
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+.reviews-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
+}
+
+.reviews-card {
+}
+
+.reviews-background {
+  min-height: 791px;
+  background: url(../../assets/img/background/home/3.jpg);
+  width: 100%;
+}

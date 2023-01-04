@@ -1,0 +1,257 @@
+.expert-advice {
+  padding-bottom: 80px;
+}
+
+.about-person {
+  padding-top: 90px;
+  margin-bottom: 200px;
+  position: relative;
+
+  @media (max-width: 1250px) {
+    padding-top: 35px;
+    margin-bottom: 80px;
+  }
+}
+
+.about-person__title {
+  background: linear-gradient(269.98deg, #F9E4B0 3.97%, rgba(249, 228, 176, 0) 98.38%);
+  margin-bottom: 40px;
+
+  @media (max-width: 1250px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px;
+    margin-bottom: 25px;
+  }
+}
+
+.about-person__advice-box {
+  padding: 42px 56px;
+  background: #F7EFE9;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 29px;
+  position: relative;
+  z-index: 5;
+
+  &-list {
+    li {
+      color: $color_1;
+      margin-bottom: 13px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    padding: 17px 21px;
+
+    &-list {
+      li {
+        font-size: 15px;
+        line-height: 160.9%;
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+
+.about-person__img {
+  position: absolute;
+  right: -100px;
+  top: 0;
+  z-index: 10;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 1250px) {
+    width: 330.77px;
+    height: 242.32px;
+    top: -100px;
+  }
+}
+
+.expert-advice__subtitle {
+  margin: 9px 0 24px 0;
+}
+
+.expert-advice__box {
+  background: linear-gradient(180deg, #EADF99 0%, #BF9B4E 100%);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 29px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  &__left-side {
+    background: #FFF;
+    width: 50%;
+    border-radius: 29px;
+    border: 1px solid #C09D50;
+    padding: 46px 0 26px 130px;
+  }
+
+  &__right-side {
+    width: 50%;
+    padding: 46px;
+
+    h1 {
+      text-transform: lowercase;
+    }
+  }
+
+  &-list {
+    li {
+      margin-bottom: 15px;
+      position: relative;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 1px;
+        background: #000;
+        top: 12px;
+        left: -35px;
+      }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+
+    &__left-side {
+      width: 100%;
+      padding: 16px 32px 29px 38px;
+    }
+
+    &-list {
+      li {
+        font-size: 15px;
+        line-height: 195.9%;
+        margin-bottom: 7px;
+
+        &::before {
+          width: 10px;
+          left: -17px;
+          top: 14px;
+        }
+      }
+    }
+
+    &__right-side {
+      width: 100%;
+      padding: 27px;
+    }
+
+  }
+}
+
+.expert-cards {
+  text-align: center;
+
+  @media (max-width: 1250px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+    justify-content: center;
+  }
+}
+
+.expert-card {
+  display: inline-block;
+  border-radius: 20px;
+  border-top: none;
+  margin: 0 10px 39px 0;
+
+  @media (max-width: 1250px) {
+    display: block;
+    margin: 0;
+  }
+}
+
+.expert-card__img {
+  max-width: 296px;
+  max-height: 256px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(149, 133, 120, 0) 0%, #958578 100%);
+  border-radius: 0px 0px 20px 20px;
+  z-index: 10;
+
+  img {
+    max-width: 100%;
+    width: 296px;
+    height: 256px;
+    background: linear-gradient(180deg, rgba(149, 133, 120, 0) 0%, #958578 100%);
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background: url("../../assets/img/webinar/shadow.png");
+    bottom: 0;
+  }
+}
+
+.expert-card__img__text {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+  text-align: left;
+}
+
+.expert-card__img__text__type {
+  font-size: 15px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.expert-card__img__text__name {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #F9E4B0;
+}
+
+.expert-card__content {
+  padding: 46px 19px 47px 19px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  top: -30px;
+  border-radius: 20px;
+}
+
+.expert-card__content__text {
+  max-width: 255px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8F8F8F;
+  text-align: left;
+}
+
+.expert-btn {
+  @include link-reset;
+  @include gold-btn;
+  padding: 9px 42px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+
+  @media (max-width: 1250px) {
+    font-size: 20px;
+    padding: 12px 48px;
+  }
+}

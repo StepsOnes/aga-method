@@ -1,0 +1,37 @@
+// Base
+@import "base/reset";
+@import "base/fonts";
+@import "base/base";
+
+// Helpers
+@import "helpers/mixin";
+@import "helpers/vars";
+
+// Templates
+@import "templates/header";
+@import "templates/footer";
+
+// Blocks
+@import "blocks/decoration";
+@import "blocks/nav";
+@import "blocks/mobile-navigation";
+@import "blocks/header-content";
+@import "blocks/expert-promises";
+@import "blocks/company-achievements";
+@import "blocks/consultation-block";
+@import "blocks/history-success";
+@import "blocks/background";
+@import "blocks/reviews";
+@import "blocks/webinars-advantage";
+@import "blocks/about-person";
+@import "blocks/for-whom";
+@import "blocks/webinar-program";
+@import "blocks/results-webinar";
+@import "blocks/person-consultation";
+@import "blocks/webinar-videos";
+@import "blocks/conditions-consultation";
+@import "blocks/consultation-reviews";
+@import "blocks/header-content__contacts";
+@import "blocks/contacts-block";
+@import "blocks/mobile-menu";
+@import "blocks/swiper-settings";

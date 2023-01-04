@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Kudryashev Headline';
+    src: local('Kudryashev Headline Sans'), local('Kudryashev-Headline-Sans'),
+        url('KudryashevHeadline-Sans.woff2') format('woff2'),
+        url('KudryashevHeadline-Sans.woff') format('woff'),
+        url('KudryashevHeadline-Sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

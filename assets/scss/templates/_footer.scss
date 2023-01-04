@@ -1,0 +1,76 @@
+.footer {
+  background: #958578;
+  padding: 10px 0 32px 0;
+  color: #FFF;
+
+   @media (max-width: 1250px) {
+     padding: 24px;
+   }
+}
+
+.footer-row {
+  justify-content: space-between;
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__title {
+  color: #FFF;
+  margin-bottom: 13px;
+}
+
+.footer-requisites {
+  user-select: text;
+  margin-bottom: 172px;
+}
+
+.terms-link {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+}
+
+.footer__nav-list {
+  text-align: right;
+  li {
+    margin-bottom: 10px;
+    text-align: right;
+  }
+
+  margin-bottom: 59px;
+}
+
+.footer__nav-list__item {
+  font-family: 'Kudryashev Headline';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 155.9%;
+
+  text-transform: uppercase;
+  @include link-reset;
+  color: #FFF;
+}
+
+.footer__social-icons{
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.footer-phone {
+  text-align: right;
+  @include link-reset;
+  color: #FFFFFF;
+}
+
+.col--right {
+  text-align: right;
+}
+
+.footer-logo {
+  margin-top: 50px;
+}

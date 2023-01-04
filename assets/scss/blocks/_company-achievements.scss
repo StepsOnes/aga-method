@@ -1,0 +1,100 @@
+.company-achievements__title {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 41px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (max-width: 1250px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.company-achievements {
+  margin: 50px 0 250px 0;
+
+  @media (max-width: 1250px) {
+    margin-bottom: 113px;
+  }
+}
+
+.company-achievements__block {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  border: 1px solid #958578;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 37px;
+  padding: 25px 46px 31px 46px;
+  text-align: center;
+
+  span {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1250px) {
+    background: #FFF5E9;
+    padding: 17px 18px;
+    font-size: 15px;
+    line-height: 138.5%;
+  }
+}
+
+.company-achievements__results {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 85px;
+
+  @media (max-width: 1250px) {
+    gap: 16px;
+    justify-content: flex-start;
+  }
+}
+
+.company-achievements__results__item {
+  @media (max-width: 1250px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
+
+.company-achievements__results__item__amount {
+  font-family: 'Kudryashev Headline';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 109px;
+  line-height: 126px;
+  text-align: center;
+  color: #958578;
+  opacity: 0.7;
+
+  &--pes {
+    color: #F9E4B0;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 1250px) {
+    font-size: 72px;
+    line-height: 109px;
+  }
+}
+
+.company-achievements__results__item__about {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  &--white {
+    color: #FFF;
+  }
+  @media (max-width: 1250px) {
+    font-size: 15px;
+    line-height: 17px;
+    text-align: left;
+  }
+}

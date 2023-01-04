@@ -1,0 +1,22 @@
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &-home {
+    height: 993px;
+    width: 100%;
+    background: url("../../assets/img/background/home/1.jpg");
+
+    @media (max-width: 1250px) {
+      height: 883px;
+    }
+  }
+
+  &-contacts {
+    height: 440px;
+    width: 100%;
+    background: url("../../assets/img/background/home/1.jpg");
+  }
+}
+

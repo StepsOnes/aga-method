@@ -1,0 +1,95 @@
+body {
+  font-family: 'MADE Evolve Sans';
+  font-size: 20px;
+  line-height: 25px;
+  //background: #F5F5F5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-family: 'Kudryashev Headline';
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.decoration {
+  position: absolute;
+}
+
+.center {
+  text-align: center;
+}
+
+.title-medium {
+  font-family: 'Kudryashev Headline';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+
+  &--white {
+    color: #FFF;
+  }
+
+  @media (max-width: 1250px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.title-big {
+  font-family: 'Kudryashev Headline';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 43px;
+}
+
+.lower {
+  text-transform: none;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 30%;
+
+  @media (max-width: 1250px) {
+    width: 100%;
+  }
+}
+
+.pon {
+  cursor: pointer;
+}
+
+.mobile-none {
+  @media (max-width: 1250px) {
+    display: none;
+  }
+}
+
+.mobile-active {
+  display: none;
+  @media (max-width: 1250px) {
+    display: block;
+  }
+}
+

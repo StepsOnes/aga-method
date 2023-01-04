@@ -1,0 +1,62 @@
+.webinars-advantage {
+  background: #958578;
+  padding: 60px 0;
+
+  @media (max-width: 1250px) {
+    padding: 45px 0;
+  }
+}
+
+.webinars-advantage__title {
+  margin-bottom: 60px;
+
+  @media (max-width: 1250px) {
+    text-align: center;
+    margin-bottom: 37px;
+  }
+}
+
+.webinars-advantage__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 55px;
+
+  @media (max-width: 1250px) {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.webinars-advantage__card {
+  background: #FFF;
+  padding: 25px 10px 31px 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    background: url("../../assets/img/consultation/list_marker.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+  }
+}
+
+.webinars-advantage__btn {
+  @include link-reset;
+  @include gold-btn;
+  margin-top: 50px;
+  display: inline-block;
+  padding: 13px 40px;
+}

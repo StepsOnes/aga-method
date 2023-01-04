@@ -1,0 +1,45 @@
+.nav {
+  padding: 20px 0 10px 0;
+  position: relative;
+  z-index: 10;
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
+}
+
+.nav-container {
+  position: relative;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  gap: 45px;
+}
+
+.navigation-item {
+  font-family: 'MADE Evolve Sans';
+  text-transform: uppercase;
+  @include link-reset;
+  font-weight: 500;
+  transition: 0.3s;
+
+  &:hover {
+    color: #958578;
+  }
+
+  &.active {
+    color: #958578;
+  }
+}
+
+.nav__social-icons {
+  position: absolute;
+  right: 14px;
+}

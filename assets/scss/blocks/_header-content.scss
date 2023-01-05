@@ -39,11 +39,21 @@
       justify-content: space-between;
       position: relative;
 
+      @media (max-width: 1250px) {
+        padding: 44px 44px 34px 17px;
+      }
+
       &__title {
         color: #958578;
         font-size: 32px;
         text-transform: none;
         margin-top: 30px;
+
+        @media (max-width: 1250px) {
+          font-size: 20px;
+          line-height: 102.9%;
+          margin: 0;
+        }
       }
 
       &__list {
@@ -89,6 +99,53 @@
         }
       }
     }
+  }
+}
+
+.header-content__course__inf-box__list {
+  li {
+    margin-bottom: 22px;
+    position: relative;
+
+    &::before {
+      top: -5px;
+      left: -60px;
+    }
+
+    &.item-www {
+      &::before {
+        content: '';
+        width: 35px;
+        height: 35px;
+        background: url("../../assets/img/icons/www.svg");
+        position: absolute;
+      }
+    }
+
+    &.item-calendar {
+      &::before {
+        content: '';
+        width: 35px;
+        height: 35px;
+        background: url("../../assets/img/icons/calendar.svg");
+        position: absolute;
+      }
+    }
+
+    &.item-clock {
+      &::before {
+        content: '';
+        width: 35px;
+        height: 35px;
+        background: url("../../assets/img/icons/clock.svg");
+        position: absolute;
+      }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    margin-top: 40px;
+    padding-left: 70px;
   }
 }
 
@@ -166,9 +223,23 @@
     width: 641px;
     height: 380px;
     background: url("../../assets/img/decoration/space.svg");
+    background-size: cover;
     position: absolute;
     top: -177px;
     left: -143px;
+  }
+
+  @media (max-width: 1250px) {
+    font-size: 24px;
+    line-height: 127.4%;
+    &::before {
+      width: 338.28px;
+      height: 200px;
+      transform: rotate(180deg);
+      top: -73px;
+      z-index: 10;
+      left: -143px;
+    }
   }
 }
 

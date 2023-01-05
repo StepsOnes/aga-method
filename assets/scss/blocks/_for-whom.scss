@@ -28,6 +28,10 @@
   border-radius: 29px;
   position: absolute;
   right: 0;
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
 }
 
 .for-whom__box__words-list {

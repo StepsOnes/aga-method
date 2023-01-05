@@ -28,6 +28,7 @@
 
   p {
     text-transform: uppercase;
+    user-select: text;
   }
 
   @media (max-width: 1250px) {
@@ -35,6 +36,7 @@
     p {
       font-size: 15px;
       line-height: 121.4%;
+      user-select: text;
     }
   }
 }

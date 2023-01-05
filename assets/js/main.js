@@ -1,16 +1,18 @@
 const mobBtn = document.querySelector('.mobile-navigation__burger');
-let mobMenu =  document.querySelector('.mobile-menu');
+const mobMenu =  document.querySelector('.mobile-menu');
+const body = document.body;
 
 mobBtn.addEventListener('click', function () {
    mobBtn.classList.toggle('active');
    mobMenu.classList.toggle('not-visible');
+   body.classList.toggle('lock');
 });
 
 document.querySelector('.menu-body').addEventListener('click', (event) => {
     mobMenu.classList.toggle('not-visible');
-    console.log(event.target)
+    mobBtn.classList.toggle('active');
+    body.classList.toggle('lock');
 });
-
 
 
 new Swiper('.swiper', {

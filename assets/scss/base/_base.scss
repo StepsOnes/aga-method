@@ -2,7 +2,10 @@ body {
   font-family: 'MADE Evolve Sans';
   font-size: 20px;
   line-height: 25px;
-  //background: #F5F5F5;
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 *,

@@ -1,10 +1,14 @@
 const mobBtn = document.querySelector('.mobile-navigation__burger');
+let mobMenu =  document.querySelector('.mobile-menu');
 
 mobBtn.addEventListener('click', function () {
-   let mobMenu =  document.querySelector('.mobile-menu');
-
    mobBtn.classList.toggle('active');
    mobMenu.classList.toggle('not-visible');
+});
+
+document.querySelector('.menu-body').addEventListener('click', (event) => {
+    mobMenu.classList.toggle('not-visible');
+    console.log(event.target)
 });
 
 
@@ -40,8 +44,9 @@ new Swiper('.swiper-reviews', {
 
 new Swiper('.webinar-cards-swiper', {
     speed: 400,
-    spaceBetween: 32,
+    spaceBetween: 22,
     slidesPerView: "auto",
+    loop: true,
 });
 
 new Swiper('.swiper__reviews-cards', {

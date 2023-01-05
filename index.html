@@ -25,7 +25,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="navigation-item">Вебинары</a>
+                        <a href="#" class="navigation-item active">Вебинары</a>
                     </li>
 
                     <li>
@@ -122,7 +122,67 @@
 </div>
 
 <div class="mobile-menu not-visible">
+    <div class="menu-body"></div>
+    <div class="menu-content">
+        <div class="mobile-menu__header">
+            <div class="mobile-menu__header__logo">
+                <img src="assets/img/logo/mobile-logo.png" alt="">
+            </div>
+        </div>
 
+        <div class="mobile-menu__main">
+            <ul class="mobile-menu__nav">
+
+                <li>
+                    <a href="course.html" class="mobile-menu-nav__item">
+                        курС МИР ТАРО
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="mobile-menu-nav__item">
+                        Вебинары
+                    </a>
+                </li>
+
+                <li>
+                    <a href="consultation.html" class="mobile-menu-nav__item">
+                        Консультация
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacts.html" class="mobile-menu-nav__item">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu__social-icons">
+                <li>
+                    <a href="#">
+                        <img src="assets/img/social_icons/ins-black.svg" alt="instagram">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="assets/img/social_icons/yot-black.svg" alt="instagram">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="assets/img/social_icons/tg-black.svg" alt="instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-content__dec-logo">
+            <img src="assets/img/logo/mobile-menu_logo.png" alt="Aga Method">
+        </div>
+    </div>
 </div>
 
 <main class="main">
@@ -175,8 +235,16 @@
     <section class="consultation-block">
         <div class="container">
             <div class="help-with">
-                <div class="woman-img">
-                    <img src="assets/img/consultation/woman.png" alt="Женщина">
+                <div class="help-with__woman">
+                    <h3 class="help-with__woman__name title">
+                        Карина Агаян
+                    </h3>
+                    <p class="help-with__woman__position">
+                        энерготерапевт, экспоненциальный коуч
+                    </p>
+                    <div class="woman-img">
+                        <img src="assets/img/consultation/woman.png" alt="Женщина">
+                    </div>
                 </div>
 
                 <div class="help-with__content">
@@ -912,7 +980,7 @@
                     <p>IBAN 0000 0000 0000 000 UA</p>
                 </div>
                 
-                <div class="terms">
+                <div class="terms mobile-none">
                     <a href="#" class="terms-link">Публичная оферта</a>
                     <a href="#" class="terms-link">Политика конфиденциальности</a>
                 </div>
@@ -925,49 +993,63 @@
             </div>
 
             <div class="col col--right">
-                <ul class="footer__nav-list">
-                   <li>
-                       <a href="#" class="footer__nav-list__item">
-                           Вебинары
-                       </a>
-                   </li>
 
-                    <li>
-                        <a href="#" class="footer__nav-list__item">
-                            консультация
-                        </a>
-                    </li>
+                <div class="mobile-row">
+                    <ul class="footer__nav-list">
+                       <li>
+                           <a href="#" class="footer__nav-list__item">
+                               Вебинары
+                           </a>
+                       </li>
 
-                    <li>
-                        <a href="#" class="footer__nav-list__item">
-                            контакты
-                        </a>
-                    </li>
-                </ul>
+                        <li>
+                            <a href="consultation.html" class="footer__nav-list__item">
+                                консультация
+                            </a>
+                        </li>
 
-                <ul class="footer__social-icons">
-                    <li>
-                        <a href="#">
-                            <img src="assets/img/social_icons/inst-footer.svg" alt="Инстаграм">
-                        </a>
-                    </li>
+                        <li>
+                            <a href="contacts.html" class="footer__nav-list__item">
+                                контакты
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#">
-                            <img src="assets/img/social_icons/yout-footer.svg" alt="Ютуб">
-                        </a>
-                    </li>
+                        <li>
+                            <a href="tel:+380440000000" class="footer-phone title-medium mobile-active">
+                                + 380 (44) 000 00 00
+                            </a>
+                        </li>
+                    </ul>
 
-                    <li>
-                        <a href="#">
-                            <img src="assets/img/social_icons/tg-footer.svg" alt="Телеграм">
-                        </a>
-                    </li>
-                </ul>
 
-                <a href="tel:+380440000000" class="footer-phone title-medium">
+                    <ul class="footer__social-icons">
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/social_icons/inst-footer.svg" alt="Инстаграм">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/social_icons/yout-footer.svg" alt="Ютуб">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/social_icons/tg-footer.svg" alt="Телеграм">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="tel:+380440000000" class="footer-phone title-medium mobile-none">
                     + 380 (44) 000 00 00
                 </a>
+
+                <div class="terms mobile-active">
+                    <a href="#" class="terms-link">Публичная оферта</a>
+                    <a href="#" class="terms-link">Политика конфиденциальности</a>
+                </div>
             </div>
         </div>
     </div>

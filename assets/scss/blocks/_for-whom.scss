@@ -3,6 +3,11 @@
   display: flex;
   overflow: hidden;
   padding-bottom: 140px;
+
+  @media (max-width: 1250px) {
+    padding-bottom: 70px;
+    margin-top: 15px;
+  }
 }
 
 .for-whom__box__persons {
@@ -13,6 +18,13 @@
   gap: 22px;
   align-items: center;
   margin-bottom: 16px;
+
+  @media (max-width: 1250px) {
+    p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
 }
 
 .for-whom__box__person__img {

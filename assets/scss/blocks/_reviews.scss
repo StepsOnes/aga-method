@@ -36,4 +36,9 @@
   min-height: 791px;
   background: url(../../assets/img/background/home/3.jpg);
   width: 100%;
+
+  @media (max-width: 1250px) {
+    background: none;
+    min-height: 0;
+  }
 }

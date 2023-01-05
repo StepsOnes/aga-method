@@ -195,6 +195,20 @@
     align-items: center;
     display: flex;
   }
+
+  @media (max-width: 1250px) {
+    margin-top: 100px;
+    background: #F7EFE9;
+    border: 1px solid #958578;
+    border-radius: 23px;
+    position: relative;
+    width: 212px;
+    height: 78px;
+
+    &__wrapper {
+      display: block;
+    }
+  }
 }
 
 .header-content__course__price-box__btn {
@@ -202,6 +216,12 @@
   @include gold-btn;
   position: relative;
   z-index: 10;
+
+  @media (max-width: 1250px) {
+    position: absolute;
+    width: 212px;
+    top: -23px;
+  }
 }
 
 .header-content__course__price-box__subtitle {
@@ -213,6 +233,15 @@
   text-align: center;
   color: #958578;
   padding: 3px 36px 7px 50px;
+
+  @media (max-width: 1250px) {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 127.4%;
+    font-weight: 600;
+    padding: 0;
+    text-align: center;
+  }
 }
 
 .header-content__course__title {

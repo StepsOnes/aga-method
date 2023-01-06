@@ -30,13 +30,24 @@ new Swiper('.swiper', {
 
 new Swiper('.swiper-reviews', {
     speed: 400,
-    spaceBetween: 0,
+    spaceBetween: 190,
     autoHeight: true,
     autoWidth: true,
     // loop: true,
     slidesPerView: 3,
     loopedSlides: 1,
     slidesPerColumn: 3,
+
+    breakpoints: {
+        // mobile + tablet - 320-990
+        320: {
+            slidesPerView: 1
+        },
+        // desktop >= 991
+        991: {
+            slidesPerView: 3
+        }
+    },
 
     navigation: {
         nextEl: '.nav-right__rev',

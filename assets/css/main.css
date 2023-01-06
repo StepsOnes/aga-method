@@ -167,7 +167,7 @@ header, main, footer {
 }
 @media (max-width: 1250px) {
   .header-home {
-    height: 883px;
+    height: 920px;
   }
 }
 .header-contacts {
@@ -746,9 +746,22 @@ header, main, footer {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1250px) {
+  .header-content__consultation__row {
+    display: block;
+  }
+}
 
 .header-content__consultation__row__box_1 {
   padding-top: 50px;
+}
+
+@media (max-width: 1250px) {
+  .header-content__consultation__row__expert {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
 }
 
 .header-content__consultation__img {
@@ -757,6 +770,12 @@ header, main, footer {
 }
 .header-content__consultation__img img {
   width: 100%;
+}
+@media (max-width: 1250px) {
+  .header-content__consultation__img {
+    position: relative;
+    right: -30px;
+  }
 }
 
 .header-content__consultation__btn {
@@ -783,9 +802,55 @@ header, main, footer {
     display: block;
   }
 }
+@media (max-width: 1250px) {
+  .header-content__consultation__btn {
+    margin-top: 42px;
+  }
+}
+
+.header-content__consultation__about {
+  font-size: 15px;
+  line-height: 150.4%;
+  margin-top: 45px;
+  margin-bottom: 7px;
+}
+
+.header-content__consultation__about-list {
+  list-style-position: inside;
+  padding-left: 15px;
+}
+.header-content__consultation__about-list li {
+  color: #958578;
+  position: relative;
+}
+.header-content__consultation__about-list li::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 5px;
+  background: #000;
+  left: -10px;
+  top: 12px;
+}
+
+@media (max-width: 1250px) {
+  .header-content__consultation__title {
+    font-size: 20px;
+    line-height: 139.9%;
+    padding: 25px;
+    background: #F7EFE9;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+}
 
 .header-content__consultation__subtitle {
-  margin: 55px 0 200px 0;
+  margin: 55px 0 0 0;
+}
+@media (max-width: 1250px) {
+  .header-content__consultation__subtitle.m-none {
+    display: none;
+  }
 }
 
 .header-content__course__price-box {
@@ -1128,7 +1193,6 @@ header, main, footer {
   .company-achievements__results__item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 15px;
   }
 }
@@ -1470,8 +1534,8 @@ header, main, footer {
 }
 @media (max-width: 1250px) {
   .slide-btn {
-    width: 20.58px;
-    height: 20.58px;
+    width: 30.58px;
+    height: 30.58px;
   }
 }
 
@@ -2294,6 +2358,7 @@ header, main, footer {
     line-height: 17px;
     padding: 16px 42px;
     max-height: 70px;
+    width: 340px;
   }
 }
 
@@ -2445,10 +2510,24 @@ header, main, footer {
   font-size: 27px;
   line-height: 41px;
 }
+@media (max-width: 1250px) {
+  .person-consultation__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 
 .person-consultation__subtitle {
   color: #958578;
   margin-bottom: 50px;
+}
+@media (max-width: 1250px) {
+  .person-consultation__subtitle {
+    font-size: 15px;
+    line-height: 115%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 }
 
 .person-consultation__cards {
@@ -2463,6 +2542,11 @@ header, main, footer {
   justify-content: center;
   gap: 118px;
 }
+@media (max-width: 1250px) {
+  .person-consultation__row {
+    gap: 40px;
+  }
+}
 
 .results-consultation {
   margin-top: 90px;
@@ -2473,6 +2557,13 @@ header, main, footer {
   font-size: 27px;
   line-height: 41px;
   margin-bottom: 40px;
+}
+@media (max-width: 1250px) {
+  .results-consultation__title {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .results-consultation__list {
@@ -2500,6 +2591,22 @@ header, main, footer {
   left: -4px;
   top: 50%;
   transform: translateY(-50%);
+  background-size: cover;
+}
+@media (max-width: 1250px) {
+  .results-consultation__list {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .results-consultation__list li {
+    font-size: 13px;
+    line-height: 125%;
+    padding-left: 30px;
+  }
+  .results-consultation__list li::before {
+    width: 21px;
+    height: 21px;
+  }
 }
 
 .person-consultation__box {
@@ -2513,11 +2620,34 @@ header, main, footer {
   padding: 50px 33px 62px 20px;
   position: relative;
   z-index: 10;
+  margin-bottom: 190px;
+}
+@media (max-width: 1250px) {
+  .person-consultation__box {
+    display: block;
+    position: relative;
+    padding: 100px 17px 75px 17px;
+    margin-bottom: 0;
+  }
 }
 
 .person-consultation__box__img {
   max-width: 267px;
   max-height: 267px;
+}
+@media (max-width: 1250px) {
+  .person-consultation__box__img {
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -80px;
+  }
+  .person-consultation__box__img img {
+    border-radius: 50%;
+    width: 167.8px;
+    height: 167.8px;
+  }
 }
 
 .person-consultation__box__content__title {
@@ -2526,12 +2656,26 @@ header, main, footer {
   margin-bottom: 50px;
   line-height: 136%;
 }
+@media (max-width: 1250px) {
+  .person-consultation__box__content__title {
+    font-size: 20px;
+    line-height: 136%;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+}
 
 .person-consultation__box__content__text {
   max-width: 587px;
 }
 .person-consultation__box__content__text span {
   font-weight: 600;
+}
+@media (max-width: 1250px) {
+  .person-consultation__box__content__text {
+    font-size: 15px;
+    line-height: 17px;
+  }
 }
 
 .person-consultation__box__btn {
@@ -2562,19 +2706,39 @@ header, main, footer {
     display: block;
   }
 }
+@media (max-width: 1250px) {
+  .person-consultation__box__btn {
+    width: 328px;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 .webinar-videos {
   min-height: 891px;
   background: url(../../assets/img/background/home/3.jpg);
   background-repeat: no-repeat;
   width: 100%;
-  padding-top: 240px;
+  padding-top: 100px;
   margin-bottom: 140px;
   position: relative;
+}
+@media (max-width: 1250px) {
+  .webinar-videos {
+    min-height: 0;
+    background: none;
+  }
 }
 
 .webinar-videos__title {
   margin-bottom: 50px;
+}
+@media (max-width: 1250px) {
+  .webinar-videos__title {
+    font-size: 19px;
+    margin-bottom: 25px;
+  }
 }
 
 .webinar-videos__box {
@@ -2585,11 +2749,23 @@ header, main, footer {
   padding: 60px;
   z-index: 10;
 }
+@media (max-width: 1250px) {
+  .webinar-videos__box {
+    padding: 25px;
+    border-radius: 20px;
+  }
+}
 
 .webinar-videos__box__about {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 144%;
+}
+@media (max-width: 1250px) {
+  .webinar-videos__box__about {
+    font-size: 13px;
+    line-height: 144%;
+  }
 }
 
 .webinar-videos__subscribe-btn {
@@ -2606,9 +2782,14 @@ header, main, footer {
 .conditions-consultation__cards {
   margin: 25px 0 80px 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
+}
+@media (max-width: 1250px) {
+  .conditions-consultation__cards {
+    margin-top: 35px;
+    gap: 35px;
+  }
 }
 
 .conditions-consultation__card {
@@ -2630,6 +2811,11 @@ header, main, footer {
   bottom: -23px;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (max-width: 1250px) {
+  .conditions-consultation__card {
+    background: #F4E7DD;
+  }
 }
 
 .conditions-consultation__row {
@@ -2663,6 +2849,23 @@ header, main, footer {
   right: -75px;
   top: -21px;
 }
+@media (max-width: 1250px) {
+  .conditions-consultation__row p {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .conditions-consultation__row p.line-row {
+    display: none;
+  }
+  .conditions-consultation__row p::before {
+    content: "";
+    position: absolute;
+    width: 310px;
+    height: 1px;
+    bottom: -20px;
+    background: #958578;
+  }
+}
 
 .conditions-consultation__list {
   list-style: disc;
@@ -2671,11 +2874,22 @@ header, main, footer {
 .conditions-consultation__list li {
   font-weight: 300;
 }
+@media (max-width: 1250px) {
+  .conditions-consultation__list {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 .consultation-reviews {
   background: #958578;
   padding: 65px 0 76px 0;
   position: relative;
+}
+@media (max-width: 1250px) {
+  .consultation-reviews {
+    margin-bottom: 100px;
+  }
 }
 
 .consultation-reviews__btn {
@@ -2706,12 +2920,24 @@ header, main, footer {
     display: block;
   }
 }
+@media (max-width: 1250px) {
+  .consultation-reviews__btn {
+    width: 328px;
+    bottom: -20px;
+  }
+}
 
 .consultation-reviews__title {
   color: white;
   max-width: 750px;
   font-size: 35px;
   line-height: 53px;
+}
+@media (max-width: 1250px) {
+  .consultation-reviews__title {
+    font-size: 20px;
+    line-height: 145%;
+  }
 }
 
 .consultation-reviews__row {
@@ -2723,6 +2949,13 @@ header, main, footer {
 .consultation-reviews__subtitle {
   color: #F9E4B0;
   margin: 37px 0 80px 0;
+}
+@media (max-width: 1250px) {
+  .consultation-reviews__subtitle {
+    font-size: 15px;
+    line-height: 17px;
+    margin: 20px 0 60px 0;
+  }
 }
 
 .reviews-box {
@@ -2736,6 +2969,11 @@ header, main, footer {
 
 .nav-left__rev {
   left: -70px;
+}
+@media (max-width: 1250px) {
+  .nav-left__rev {
+    left: 0;
+  }
 }
 
 .nav-right__rev {

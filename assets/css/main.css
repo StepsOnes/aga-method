@@ -175,6 +175,11 @@ header, main, footer {
   width: 100%;
   background: url("../../assets/img/background/home/1.jpg");
 }
+@media (max-width: 1250px) {
+  .header-contacts {
+    height: 340px;
+  }
+}
 
 .footer {
   background: #958578;
@@ -326,6 +331,17 @@ header, main, footer {
   width: 962.34px;
   height: 641.11px;
 }
+@media (max-width: 1700px) {
+  .header-leaf__decoration_1 {
+    filter: blur(4px);
+    top: -210px;
+    left: -770px;
+  }
+  .header-leaf__decoration_1 img {
+    height: 50%;
+    width: 50%;
+  }
+}
 
 .header-leaf__decoration_2 {
   opacity: 0.5;
@@ -336,6 +352,16 @@ header, main, footer {
 .header-leaf__decoration_2 img {
   width: 1152.45px;
   height: 767.76px;
+}
+@media (max-width: 1700px) {
+  .header-leaf__decoration_2 {
+    top: 101px;
+    right: -775px;
+  }
+  .header-leaf__decoration_2 img {
+    height: calc(1152.45px - 10%);
+    width: calc(767.76px - 10%);
+  }
 }
 
 .consultation-cloudy__decoration_1 {
@@ -537,6 +563,49 @@ header, main, footer {
   left: -86px;
   z-index: 10;
 }
+@media (max-width: 1700px) {
+  .header-contacts__cloudy__decoration {
+    left: -200px;
+  }
+  .header-contacts__cloudy__decoration img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+.header-taro__decoration-mob_1 {
+  right: 0;
+  bottom: 44px;
+}
+
+.header-taro__decoration-mob_2 {
+  right: 0;
+  top: 360px;
+}
+
+.header-taro__decoration-mob_3 {
+  top: 50px;
+  right: 0;
+}
+
+.consultation-block__cloudy__decoration-mob_1 {
+  top: 10px;
+  right: 0;
+}
+
+.consultation-block__cloudy__decoration-mob_2 {
+  left: 0;
+  bottom: 765px;
+}
+
+.header-consultation__cloudy__decoration__mob_1 {
+  right: -44px;
+  bottom: 190px;
+}
+
+.header-contacts__cloudy__decoration__mob_1 {
+  right: 0;
+}
 
 .nav {
   padding: 20px 0 10px 0;
@@ -686,6 +755,7 @@ header, main, footer {
 @media (max-width: 1250px) {
   .header-content__course__inf-box {
     padding: 44px 44px 34px 17px;
+    z-index: 10;
   }
 }
 .header-content__course__inf-box__title {
@@ -1181,7 +1251,7 @@ header, main, footer {
 }
 @media (max-width: 1250px) {
   .company-achievements {
-    margin-bottom: 113px;
+    margin-bottom: 95px;
   }
 }
 
@@ -1320,6 +1390,7 @@ header, main, footer {
   font-weight: 600;
   font-size: 40px;
   line-height: 53px;
+  position: relative;
 }
 
 .help-with__woman-position {
@@ -2825,6 +2896,13 @@ header, main, footer {
   .conditions-consultation__cards {
     margin-top: 35px;
     gap: 35px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1250px) {
+  .conditions-consultation__title {
+    text-align: center;
   }
 }
 
@@ -2851,6 +2929,9 @@ header, main, footer {
 @media (max-width: 1250px) {
   .conditions-consultation__card {
     background: #F4E7DD;
+    width: 297px;
+    font-size: 15px;
+    line-height: 17px;
   }
 }
 
@@ -3019,10 +3100,42 @@ header, main, footer {
 .header-content__contacts {
   margin-top: 90px;
 }
+@media (max-width: 1250px) {
+  .header-content__contacts {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header-course {
+    height: 800px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header-content__contacts__title {
+    font-size: 25px;
+    line-height: 139.9%;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header-content__contacts__subtitle {
+    font-size: 15px;
+    line-height: 118.4%;
+    max-width: 229px;
+  }
+}
 
 .contacts-block {
   padding: 150px 0 64px 0;
   position: relative;
+}
+@media (max-width: 1250px) {
+  .contacts-block {
+    padding: 30px 0 100px 0;
+  }
 }
 
 .contacts-block__container {
@@ -3034,10 +3147,21 @@ header, main, footer {
 .contacts-block__text {
   margin-left: 20%;
 }
+@media (max-width: 1250px) {
+  .contacts-block__text {
+    margin: 0;
+  }
+}
 
 .contacts-block__title {
   font-size: 27px;
   line-height: 41px;
+}
+@media (max-width: 1250px) {
+  .contacts-block__title {
+    font-size: 20px;
+    line-height: 139.9%;
+  }
 }
 
 .contacts-block__subtitle {
@@ -3045,12 +3169,12 @@ header, main, footer {
   line-height: 118.4%;
   margin-bottom: 42px;
 }
-
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 34.25%;
-  position: relative;
-  height: 0;
+@media (max-width: 1250px) {
+  .contacts-block__subtitle {
+    font-size: 15px;
+    line-height: 118.4%;
+    margin-bottom: 25px;
+  }
 }
 
 .map-responsive iframe {
@@ -3058,7 +3182,12 @@ header, main, footer {
   top: 0;
   height: 545px;
   width: 100%;
-  position: absolute;
+}
+@media (max-width: 1250px) {
+  .map-responsive iframe {
+    height: 400px;
+    border-radius: 20px;
+  }
 }
 
 .mobile-menu {

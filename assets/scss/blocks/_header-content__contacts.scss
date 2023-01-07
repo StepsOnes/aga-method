@@ -1,7 +1,29 @@
 .header-content__contacts {
   margin-top: 90px;
+
+  @media (max-width: 1250px) {
+    margin-top: 150px;
+  }
+}
+
+.header-course {
+  @media (max-width: 1250px) {
+    height: 800px;
+  }
+}
+
+.header-content__contacts__title {
+  @media (max-width: 1250px) {
+    font-size: 25px;
+    line-height: 139.9%;
+    margin-bottom: 6px;
+  }
 }
 
 .header-content__contacts__subtitle {
-
+  @media (max-width: 1250px) {
+    font-size: 15px;
+    line-height: 118.4%;
+    max-width: 229px;
+  }
 }

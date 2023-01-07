@@ -396,6 +396,12 @@ header, main, footer {
   width: 348px;
   height: 620px;
 }
+@media (max-width: 1700px) {
+  .header-taro__decoration_1 img {
+    width: calc(348px - 30%);
+    height: calc(620px - 30%);
+  }
+}
 
 .header-taro__decoration_2 {
   top: 30px;
@@ -404,6 +410,16 @@ header, main, footer {
 .header-taro__decoration_2 img {
   width: 348px;
   height: 620px;
+}
+@media (max-width: 1700px) {
+  .header-taro__decoration_2 {
+    right: -207px;
+    top: 207px;
+  }
+  .header-taro__decoration_2 img {
+    width: calc(348px - 30%);
+    height: calc(620px - 30%);
+  }
 }
 
 .about-person__leaf__decoration_1 {
@@ -438,6 +454,11 @@ header, main, footer {
   width: 962.34px;
   height: 710.11px;
 }
+@media (max-width: 1700px) {
+  .header-consultation__leaf__decoration {
+    display: none;
+  }
+}
 
 .header-consultation__cloudy__decoration {
   bottom: 277px;
@@ -453,10 +474,20 @@ header, main, footer {
   width: 830.39px;
   height: 553.2px;
 }
+@media (max-width: 1700px) {
+  .person-consultation__leaf__decoration_1 {
+    display: none;
+  }
+}
 
 .person-consultation__big-logo {
   left: 106px;
   top: -70px;
+}
+@media (max-width: 1700px) {
+  .person-consultation__big-logo {
+    left: -50px;
+  }
 }
 
 .person-consultation__box__cloudy__decoration_1 {
@@ -2274,6 +2305,11 @@ header, main, footer {
   border-radius: 29px;
   position: absolute;
   right: 0;
+}
+@media (max-width: 1700px) {
+  .for-whom__box__words {
+    width: 600px;
+  }
 }
 @media (max-width: 1250px) {
   .for-whom__box__words {

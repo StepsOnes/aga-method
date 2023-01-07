@@ -41,6 +41,10 @@
   position: absolute;
   right: 0;
 
+  @media (max-width: 1700px) {
+    width: 600px;
+  }
+
   @media (max-width: 1250px) {
     display: none;
   }

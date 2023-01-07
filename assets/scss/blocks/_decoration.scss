@@ -84,6 +84,15 @@
     width: 348px;
     height: 620px;
   }
+
+  @media (max-width: 1700px) {
+    img {
+      width: calc(348px - 30%);
+      height: calc(620px - 30%);
+    }
+    //top: 200px;
+
+  }
 }
 
 .header-taro__decoration_2 {
@@ -93,6 +102,16 @@
   img {
     width: 348px;
     height: 620px;
+  }
+
+  @media (max-width: 1700px) {
+    img {
+      width: calc(348px - 30%);
+      height: calc(620px - 30%);
+    }
+    right: -207px;
+    top: 207px;
+
   }
 }
 
@@ -129,6 +148,10 @@
     width: 962.34px;
     height: 710.11px;
   }
+
+  @media (max-width: 1700px) {
+    display: none;
+  }
 }
 
 
@@ -146,11 +169,19 @@
     width: 830.39px;
     height: 553.2px;
   }
+
+  @media (max-width: 1700px) {
+    display: none;
+  }
 }
 
 .person-consultation__big-logo  {
   left: 106px;
   top: -70px;
+
+  @media (max-width: 1700px) {
+    left: -50px;
+  }
 }
 
 .person-consultation__box__cloudy__decoration_1 {
